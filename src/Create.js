@@ -18,7 +18,6 @@ const Create = () => {
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify(blog),
 		}).then(() => {
-			console.log('New blog added');
 			setIsPending(false);
 			history.push('/');
 		});

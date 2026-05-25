@@ -5,7 +5,6 @@ import useFetch from './useFetch';
 const BlogDetails = () => {
 	const { id } = useParams();
 	const { Data: blog, error, isPending } = useFetch(`${API_BASE_URL}/blogs/${id}`);
-	console.log('Data', blog);
 	const history = useHistory();
 
 	const handleClick = () => {

@@ -11,7 +11,6 @@ const useFetch = url => {
 		setTimeout(() => {
 			fetch(url, { signal: abortCont.signal })
 				.then(res => {
-					console.log('Res', res);
 					if (!res.ok) {
 						throw Error('Could not fetch data from server');
 					}
